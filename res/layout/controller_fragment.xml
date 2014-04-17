@@ -6,10 +6,39 @@
               android:layout_height="match_parent">
 
     <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageButton"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/ic_launcher"/>
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/Down_button"
+            android:background="@drawable/DownButton"
+            android:layout_marginBottom="32dp"
+            android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"
+            android:layout_marginRight="36dp"/>
+    <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/Left_button"
+            android:background="@drawable/Left"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/Up_button" android:layout_alignParentStart="true"/>
+    <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/Right_button"
+            android:background="@drawable/Right"
+            android:layout_marginLeft="59dp"
+            android:layout_alignTop="@+id/Left_button" android:layout_toRightOf="@+id/Left_button"/>
+
+    <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/Up_button"
+            android:background="@drawable/Up"
+            android:layout_alignParentTop="true" android:layout_alignStart="@+id/Down_button"
+            android:layout_marginTop="33dp"/>
+    <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/Power_button"
+            android:background="@drawable/power"
+            android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
 </RelativeLayout>
