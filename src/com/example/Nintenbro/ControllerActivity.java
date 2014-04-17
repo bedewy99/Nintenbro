@@ -12,6 +12,7 @@ public class ControllerActivity extends Activity {
     /**
      * Called when the activity is first created.
      */
+    /** word */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
