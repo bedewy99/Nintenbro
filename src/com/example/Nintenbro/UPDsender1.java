@@ -12,6 +12,8 @@ import java.net.InetAddress;
  * Created by student on 4/15/14.
  */
 public class UPDsender1 {
+    private static int port;
+
     public static void logandSendPacket(String packetContents, String ipAddress, int port) {
         try {
             DatagramSocket socket = new DatagramSocket(port);
@@ -30,5 +32,10 @@ public class UPDsender1 {
         catch(IOException e) {
             Log.e("UDP", "IOException occured during packet send",e);
         }
+    }
+
+    public static void setPort(int port) {
+
+        UPDsender1.port = port;
     }
 }
